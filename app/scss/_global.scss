@@ -1,0 +1,58 @@
+body {
+  font-size: 20px;
+  line-height: 130%;
+  @extend %Ubuntu-Regular;
+  color: #fff;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+.container {
+  max-width: 1780px;
+  margin: 0 auto;
+  padding: 0 45px;
+
+  @media(max-width: 780px) {
+    padding: 0 15px;
+  }
+}
+
+.container__swiper {
+  max-width: 1490px;
+  margin: 0 auto;
+  padding: 0 90px;
+
+  @media(max-width: 1050px) {
+    padding: 0 45px;
+  }
+
+  @media(max-width: 780px) {
+    padding: 0 15px;
+  }
+}
+
+.green {
+  color: $green;
+
+  &::before {
+    background-color: $green;
+  }
+}
+
+.blue {
+  color: $blue;
+
+  &::before {
+    background-color: $blue;
+  }
+}
+
+.violet {
+  color: $violet;
+
+  &::before {
+    background-color: $violet;
+  }
+}
